@@ -1,0 +1,58 @@
+.teamcard{
+    width: 430px;
+    height: 580px;
+}
+@media (max-width: 1312px){
+    .teamcard{
+        width: 400px;
+        height: 550px;
+    }   
+}
+@media (max-width: 1216px){
+    .teamcard{
+        width: 380px;
+        height: 530px;
+    }   
+}
+@media (max-width: 1155px){
+    .teamcard{
+        width: 360px;
+        height: 520px;
+    }   
+}
+@media (max-width: 1090px){
+    .teamcard{
+        width: 340px;
+        height: 500px;
+    }   
+}
+@media (max-width: 1037px){
+    .teamcard{
+        width: 320px;
+        height: 480px;
+    }   
+}
+@media (max-width: 1024px){
+    .teamcard{
+        width: 420px;
+        height: 580px;
+    }   
+}
+@media (max-width: 861px){
+    .teamcard{
+        width: 400px;
+        height: 560px;
+    }   
+}
+@media (max-width: 807px){
+    .teamcard{
+        width: 380px;
+        height: 540px;
+    }   
+}
+@media (max-width: 394px){
+    .teamcard{
+        width: 315px;
+        height: 460px;
+    }   
+}
