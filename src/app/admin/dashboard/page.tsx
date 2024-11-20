@@ -1,5 +1,5 @@
-import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow} from "@/components/ui/table"
-import axios from "axios";
+import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+import axios, { isAxiosError } from "axios";
 
 interface Data {
     id: string;
@@ -8,10 +8,19 @@ interface Data {
     email: string;
 }
 
+const fetchData = async () => {
+    try {
+        const response = await axios.get("http://localhost:3000/api/data");
+        return response.data;
+    } catch (error) {
+        if (isAxiosError(error)) {
+            console.log(error);
+        }
+        return []
+    }
+}
 export default async function Dashboard() {
-    const data: Data[] = await axios.get("http://localhost:3000/api/data");
-    // @ts-ignore
-    const allData = data.data;
+    const data: Data[] = await fetchData();
     return (
         <div className="w-auto mx-auto mt-20">
             <Table>
@@ -25,12 +34,12 @@ export default async function Dashboard() {
                     </TableRow>
                 </TableHeader>
                 <TableBody>
-                    {allData.map((d: Data, idx: number) => (
+                    {data.map((d: Data, idx: number) => (
                         <TableRow key={idx}>
                             <TableCell>{d.email}</TableCell>
                             <TableCell>{d.firstName}</TableCell>
                             <TableCell>{d.lastName}</TableCell>
-                            <TableCell>{d.id }</TableCell>
+                            <TableCell>{d.id}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

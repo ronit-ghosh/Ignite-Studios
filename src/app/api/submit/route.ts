@@ -28,6 +28,7 @@ export async function POST(req: NextRequest) {
         })
         return NextResponse.json({ message: "Thank You for Contacting Us 💖", alldata });
     } catch (error) {
+        console.log(error)
         return NextResponse.json({ message: "Something Went Wrong 😭! Please Try Again 😅" }, { status: 401 });
     }
 }

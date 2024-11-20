@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -45,7 +45,7 @@ export function HoverBorderGradient({
   };
 
   const highlight =
-  "radial-gradient(75% 181.15942028985506% at 50% 50%, #FF6C01 0%, rgba(255, 255, 255, 0) 100%)";
+    "radial-gradient(75% 181.15942028985506% at 50% 50%, #FF6C01 0%, rgba(255, 255, 255, 0) 100%)";
 
   useEffect(() => {
     if (!hovered) {
@@ -54,10 +54,11 @@ export function HoverBorderGradient({
       }, duration * 1000);
       return () => clearInterval(interval);
     }
-  }, [hovered]);
+  }, [hovered, duration]);
   return (
     <Tag
-      onMouseEnter={(event: React.MouseEvent<HTMLDivElement>) => {
+      // event: React.MouseEvent<HTMLDivElement>
+      onMouseEnter={() => {
         setHovered(true);
       }}
       onMouseLeave={() => setHovered(false)}

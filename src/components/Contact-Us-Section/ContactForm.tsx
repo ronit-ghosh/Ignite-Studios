@@ -16,7 +16,7 @@ export default function ContactForm() {
         Fill details
       </h2>
       <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-        We'll reach to you as soon as we can
+        We&apos;ll reach to you as soon as we can
       </p>
 
       <form className="my-8" onSubmit={handleSubmit}>

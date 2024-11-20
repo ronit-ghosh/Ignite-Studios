@@ -21,8 +21,8 @@ export function About() {
                     Shine Bright  <br /> in the Digital World
                 </motion.h1>
                 <div className="absolute text-center -bottom-60 z-10 capitalize text-lg bg-gradient-to-b from-orange-400 to bg-orange-600 text-transparent bg-clip-text">
-                From innovative web and mobile applications to striking logos and 3D animations, Ignite Studios is here to fuel your brand's growth.
-                let us ignite your brand's potential!
+                From innovative web and mobile applications to striking logos and 3D animations, Ignite Studios is here to fuel your brand&apos;s growth.
+                let us ignite your brand&apos;s potential!
                 </div>
             </div>
         </LampContainer>
