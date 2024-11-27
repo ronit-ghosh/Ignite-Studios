@@ -12,7 +12,7 @@ const Team = () => {
                     <span className="flex gap-3 items-center">Meet out Team <MoveDown /></span>
                 </h2>
                 <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 ">
-                    <TeamCard img={ronitImg} role={"backend developer & sexecutive"} fullname={"ronit ghosh"} />
+                    <TeamCard img={ronitImg} role={"backend developer"} fullname={"ronit ghosh"} />
                     <TeamCard img={sayakImg} role={"frontend developer"} fullname={"sayak dey"} />
                     <TeamCard img={joydeepImg} role={"design head"} fullname={"joydeep roy"} />
                 </div>
