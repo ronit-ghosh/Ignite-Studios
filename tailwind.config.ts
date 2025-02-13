@@ -9,16 +9,25 @@ module.exports = {
   darkMode: ["class"],
   theme: {
     extend: {
+      fontFamily: {
+        strechPro: ["var(--font-stretch-pro)"],
+        coolvetica: ["var(--font-coolvetica)"],
+      },
       animation: {
         'fade-in': 'fade-in 3s ease-in-out forwards',
         title: 'title 3s ease-out forwards',
         'fade-left': 'fade-left 3s ease-in-out forwards',
         'fade-right': 'fade-right 3s ease-in-out forwards',
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        shine: 'shine 5s linear infinite',
       }, boxShadow: {
         input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
       },
       keyframes: {
+        shine: {
+          '0%': { 'background-position': '100%' },
+          '100%': { 'background-position': '-100%' },
+        },
         spotlight: {
           "0%": {
             opacity: 0,

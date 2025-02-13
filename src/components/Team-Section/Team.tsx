@@ -1,8 +1,8 @@
 import TeamCard from './TeamCard'
 import { MoveDown } from 'lucide-react';
-import ronitImg from "../../public/ronit.jpg"
-import sayakImg from "../../public/sayak.png"
-import joydeepImg from "../../public/joydeep.jpeg"
+import ronitImg from "../../images/ronit.jpg"
+import sayakImg from "../../images/sayak.png"
+import joydeepImg from "../../images/joydeep.jpeg"
 
 const Team = () => {
     return (

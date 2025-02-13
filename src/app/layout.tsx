@@ -1,6 +1,22 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Providers } from "./provider";
+import localfont from "next/font/local";
+
+const strechPro = localfont({
+  src: [{
+    path: "../../public/StretchPro.otf",
+    weight: "400",
+  }],
+  variable: "--font-stretch-pro",
+})
+
+const coolvetica = localfont({
+  src: [{
+    path: "../../public/Newake.otf",
+    weight: "100",
+  }],
+  variable: "--font-coolvetica",
+})
 
 export const metadata: Metadata = {
   title: "Ignite Studios",
@@ -15,11 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="antialiased dark"
+        className={`${strechPro.variable} ${coolvetica.variable}  antialiased dark`}
       >
-        <Providers>
-          {children}
-        </Providers>
+        {children}
       </body>
     </html>
   );
