@@ -11,10 +11,9 @@ const Team = () => {
                 <h2 className="max-w-7xl pl-4 mx-auto text-4xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans border-l-4 border-orange-500">
                     <span className="flex gap-3 items-center">Meet out Team <MoveDown /></span>
                 </h2>
-                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 ">
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 mt-10 ">
                     <TeamCard img={ronitImg} role={"backend developer"} fullname={"ronit ghosh"} />
                     <TeamCard img={sayakImg} role={"frontend developer"} fullname={"sayak dey"} />
-                    <TeamCard img={joydeepImg} role={"design head"} fullname={"joydeep roy"} />
                 </div>
             </div>
         </>

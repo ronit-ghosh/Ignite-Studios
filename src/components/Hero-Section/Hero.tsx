@@ -7,7 +7,7 @@ import ShinyText from "../ui/shinytext";
 export function Hero() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <div className="h-[40rem] w-full flex flex-col items-center justify-center rounded-md antialiased relative overflow-hidden">
                 <Spotlight />
                 <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={100} />
